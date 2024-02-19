@@ -1,0 +1,22 @@
+##########
+# classes
+##########
+
+BusInOut	KEYWORD1
+
+##########
+# methods and functions
+##########
+
+config	KEYWORD2
+value	KEYWORD2
+
+##########
+# register names
+##########
+
+##########
+# constants
+##########
+
+nc	LITERAL1
