@@ -14,6 +14,10 @@
 /** BusInOut class
  *	
  *  @class BusInOut
+ *  
+ *	This class can be inherited. 
+ *	When the "operator=" need to be used in inherited class, 
+ *	use "using BusInOut::operator=;" in that class. 
  */
 
 class BusInOut {
@@ -41,29 +45,29 @@ public:
 	 *
 	 * @param conf INPUT or OUTPUT (defined in Arduino.h)
 	 */
-	uint8_t		config( int conf );
+	virtual uint8_t		config( int conf );
 
 	/** Output a value to BusInOut pins
 	 *
 	 * @param v value to be set to pins
 	 */
-	void		value( uint8_t v );
+	virtual void		value( uint8_t v );
 	
 	/** Input a value from BusInOut pins
 	 *
 	 * @return value read from pins
 	 */
-	uint8_t		value( void );
+	virtual uint8_t		value( void );
 	
 	
 	/** A short hand for setting pins
 	 */
-	BusInOut&	operator=( uint8_t v );
-	BusInOut&	operator=( BusInOut& rhs );
+	virtual BusInOut&	operator=( uint8_t v );
+	virtual BusInOut&	operator=( BusInOut& rhs );
 
 	/** A short hand for reading pins
 	 */
-	operator	int();
+	virtual operator	int();
 	
 private:
 	uint8_t	_bits[ 8 ];
