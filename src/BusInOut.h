@@ -62,12 +62,12 @@ public:
 	
 	/** A short hand for setting pins
 	 */
-	virtual BusInOut&	operator=( uint8_t v );
-	virtual BusInOut&	operator=( BusInOut& rhs );
+	BusInOut&	operator=( uint8_t v );
+	BusInOut&	operator=( BusInOut& rhs );
 
 	/** A short hand for reading pins
 	 */
-	virtual operator	int();
+	operator	int();
 	
 private:
 	uint8_t	_bits[ 8 ];

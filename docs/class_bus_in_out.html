@@ -23,7 +23,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">BusInOut_Arduino<span id="projectnumber">&#160;0.1.0</span>
+   <div id="projectname">BusInOut_Arduino<span id="projectnumber">&#160;0.1.1</span>
    </div>
    <div id="projectbrief">Temperature sensor device operation sample code for Arduino</div>
   </td>
@@ -87,11 +87,11 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a6d47626f7518b2ff15ed678713287c9b" id="r_a6d47626f7518b2ff15ed678713287c9b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d47626f7518b2ff15ed678713287c9b">BusInOut</a> (uint8_t bit0=<a class="el" href="#afe905f5c38175deb43197da293523543">nc</a>, uint8_t bit1=<a class="el" href="#afe905f5c38175deb43197da293523543">nc</a>, uint8_t bit2=<a class="el" href="#afe905f5c38175deb43197da293523543">nc</a>, uint8_t bit3=<a class="el" href="#afe905f5c38175deb43197da293523543">nc</a>, uint8_t bit4=<a class="el" href="#afe905f5c38175deb43197da293523543">nc</a>, uint8_t bit5=<a class="el" href="#afe905f5c38175deb43197da293523543">nc</a>, uint8_t bit6=<a class="el" href="#afe905f5c38175deb43197da293523543">nc</a>, uint8_t bit7=<a class="el" href="#afe905f5c38175deb43197da293523543">nc</a>)</td></tr>
 <tr class="separator:a6d47626f7518b2ff15ed678713287c9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adec48b5ddf422ebb27db29209a95acd8" id="r_adec48b5ddf422ebb27db29209a95acd8"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adec48b5ddf422ebb27db29209a95acd8">config</a> (int conf)</td></tr>
+<tr class="memitem:adec48b5ddf422ebb27db29209a95acd8" id="r_adec48b5ddf422ebb27db29209a95acd8"><td class="memItemLeft" align="right" valign="top">virtual uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adec48b5ddf422ebb27db29209a95acd8">config</a> (int conf)</td></tr>
 <tr class="separator:adec48b5ddf422ebb27db29209a95acd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66e048f49c436aaa298f5eb135455ae7" id="r_a66e048f49c436aaa298f5eb135455ae7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a66e048f49c436aaa298f5eb135455ae7">value</a> (uint8_t v)</td></tr>
+<tr class="memitem:a66e048f49c436aaa298f5eb135455ae7" id="r_a66e048f49c436aaa298f5eb135455ae7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a66e048f49c436aaa298f5eb135455ae7">value</a> (uint8_t v)</td></tr>
 <tr class="separator:a66e048f49c436aaa298f5eb135455ae7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7769f756b07ada0280a0005e0e8ba90e" id="r_a7769f756b07ada0280a0005e0e8ba90e"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7769f756b07ada0280a0005e0e8ba90e">value</a> (void)</td></tr>
+<tr class="memitem:a7769f756b07ada0280a0005e0e8ba90e" id="r_a7769f756b07ada0280a0005e0e8ba90e"><td class="memItemLeft" align="right" valign="top">virtual uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7769f756b07ada0280a0005e0e8ba90e">value</a> (void)</td></tr>
 <tr class="separator:a7769f756b07ada0280a0005e0e8ba90e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad880b6ad910bb3c85574fd0a7fbcb9ba" id="r_ad880b6ad910bb3c85574fd0a7fbcb9ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_bus_in_out.html">BusInOut</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad880b6ad910bb3c85574fd0a7fbcb9ba">operator=</a> (uint8_t v)</td></tr>
 <tr class="separator:ad880b6ad910bb3c85574fd0a7fbcb9ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -117,9 +117,10 @@ Private Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_bus_in_out.html">BusInOut</a> library for Arduino</p>
 <dl class="section author"><dt>Author</dt><dd>Tedd OKANO</dd></dl>
-<p>Released under the MIT license License <a class="el" href="class_bus_in_out.html">BusInOut</a> class </p>
+<p>Released under the MIT license License <a class="el" href="class_bus_in_out.html">BusInOut</a> class</p>
+<p>This class can be inherited. When the "operator=" need to be used in inherited class, use "using BusInOut::operator=;" in that class. </p>
 
-<p class="definition">Definition at line <a class="el" href="_bus_in_out_8h_source.html#l00019">19</a> of file <a class="el" href="_bus_in_out_8h_source.html">BusInOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_bus_in_out_8h_source.html#l00023">23</a> of file <a class="el" href="_bus_in_out_8h_source.html">BusInOut.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6d47626f7518b2ff15ed678713287c9b" name="a6d47626f7518b2ff15ed678713287c9b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6d47626f7518b2ff15ed678713287c9b">&#9670;&#160;</a></span>BusInOut()</h2>
@@ -188,6 +189,9 @@ Private Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">uint8_t BusInOut::config </td>
@@ -196,6 +200,11 @@ Private Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Configure <a class="el" href="class_bus_in_out.html">BusInOut</a> IO direction</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -275,6 +284,9 @@ Private Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void BusInOut::value </td>
@@ -283,6 +295,11 @@ Private Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Output a value to <a class="el" href="class_bus_in_out.html">BusInOut</a> pins</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -301,6 +318,9 @@ Private Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">uint8_t BusInOut::value </td>
@@ -309,6 +329,11 @@ Private Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Input a value from <a class="el" href="class_bus_in_out.html">BusInOut</a> pins</p>
 <dl class="section return"><dt>Returns</dt><dd>value read from pins </dd></dl>
@@ -340,7 +365,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bus_in_out_8h_source.html#l00069">69</a> of file <a class="el" href="_bus_in_out_8h_source.html">BusInOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_bus_in_out_8h_source.html#l00073">73</a> of file <a class="el" href="_bus_in_out_8h_source.html">BusInOut.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_bus_in_out_8cpp_source.html#l00003">BusInOut()</a>, <a class="el" href="_bus_in_out_8cpp_source.html#l00026">config()</a>, <a class="el" href="_bus_in_out_8cpp_source.html#l00045">value()</a>, and <a class="el" href="_bus_in_out_8cpp_source.html#l00056">value()</a>.</p>
 
@@ -366,7 +391,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bus_in_out_8h_source.html#l00071">71</a> of file <a class="el" href="_bus_in_out_8h_source.html">BusInOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_bus_in_out_8h_source.html#l00075">75</a> of file <a class="el" href="_bus_in_out_8h_source.html">BusInOut.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_bus_in_out_8cpp_source.html#l00026">config()</a>.</p>
 
@@ -392,7 +417,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bus_in_out_8h_source.html#l00070">70</a> of file <a class="el" href="_bus_in_out_8h_source.html">BusInOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_bus_in_out_8h_source.html#l00074">74</a> of file <a class="el" href="_bus_in_out_8h_source.html">BusInOut.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_bus_in_out_8cpp_source.html#l00026">config()</a>, <a class="el" href="_bus_in_out_8cpp_source.html#l00045">value()</a>, and <a class="el" href="_bus_in_out_8cpp_source.html#l00056">value()</a>.</p>
 
@@ -419,7 +444,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>To define non-connected pin, use <a class="el" href="#afe905f5c38175deb43197da293523543">BusInOut::nc</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="_bus_in_out_8h_source.html#l00022">22</a> of file <a class="el" href="_bus_in_out_8h_source.html">BusInOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_bus_in_out_8h_source.html#l00026">26</a> of file <a class="el" href="_bus_in_out_8h_source.html">BusInOut.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_bus_in_out_8cpp_source.html#l00026">config()</a>, <a class="el" href="_bus_in_out_8cpp_source.html#l00045">value()</a>, and <a class="el" href="_bus_in_out_8cpp_source.html#l00056">value()</a>.</p>
 
